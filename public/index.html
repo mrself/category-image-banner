@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+<div class="mr-category-banner">
+    <div class="mr-category-banner__inner">
+        <div class="mr-category-banner__text">
+            <h2>Mens Sweaters</h2>
+            <p>Largest selection of Men's Aran sweaters from classic styles to modern designs - shop our authentic Arans for him.</p>
+        </div>
+        <div class="mr-category-banner__img-container">
+            <img class="mr-category-banner__img" src="./Gents-Sweaters--no-text.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+
+<!--<h2>Mens Sweaters</h2>-->
+<style>
+    body {
+        font-family: Arial;
+        background-color: #f7f7ed;
+        margin-top: 50px;
+    }
+    .mr-category-banner__inner {
+        max-width: 1567px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .mr-category-banner__text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50px;
+        width: 45%;
+        z-index: 10;
+        font-size: 19px;
+    }
+
+    @media screen and (max-width: 1500px) {
+        .mr-category-banner__img-container {
+            margin-left: calc(100% - 1500px);
+        }
+
+        .mr-category-banner__img {
+            max-height: 50vw;
+        }
+
+        .mr-category-banner__text {
+            width: 38%;
+        }
+    }
+
+    @media screen and (max-width: 1250px) {
+        .mr-category-banner__img-container {
+            margin-left: calc(100% - 1250px);
+        }
+
+        .mr-category-banner__img {
+            max-height: 520px;
+        }
+
+        .mr-category-banner__text {
+            width: 38%;
+        }
+    }
+
+    @media screen and (max-width: 980px) {
+        .mr-category-banner__img-container {
+            margin-left: calc(100% - 980px);
+        }
+
+        .mr-category-banner__img {
+            max-height: 420px;
+        }
+
+        .mr-category-banner__text {
+            width: 38%;
+            left: 20px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .mr-category-banner__inner {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .mr-category-banner__img-container {
+            margin-bottom: 30px;
+        }
+
+        .mr-category-banner__text {
+            transform: none;
+            position: initial;
+            width: 100%;
+            padding: 0 30px;
+        }
+    }
+</style>
+</body>
+</html>
